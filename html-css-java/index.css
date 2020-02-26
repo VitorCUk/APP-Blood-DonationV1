@@ -1,0 +1,159 @@
+/* Estrutura criada por vitor */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+
+/* === Header === */
+
+header,
+main,
+footer {
+    text-align: center;
+}
+
+header,
+main,
+.from {
+    margin: 0 auto 70px;
+    /* limites elementos */
+    width: 90%;
+    max-width: 500px;
+}
+
+header h1,
+main h2 {
+    margin-bottom: 70px;
+}
+
+header h1 {
+    font-size: 50x;
+    margin: 5px;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+.logo {
+    width: 50px;
+}
+
+main h2 span {
+    color: #ff4f4f;
+}
+
+header button {
+    padding: 8px 16px;
+    border-radius: 15px;
+    background-color: #ff4f4f;
+    color: honeydew;
+    font-weight: bold;
+    border: none;
+}
+
+
+/* === Donors Blod === */
+
+.blood {
+    color: #ff4f4f;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.blood::before {
+    content: "";
+    background-color: #ff4f4f11;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    /* molde */
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    transform: rotate(-44deg);
+}
+
+
+/* ==== From === */
+
+.donors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 50px;
+}
+
+section.from {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #ff4f4f;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+.donor p {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.from h2 {
+    text-align: left;
+    color: rgb(253, 250, 243);
+}
+
+.from button {
+    font-weight: bold;
+}
+
+.from input,
+.from button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    padding: 8px 16px;
+    border-radius: 15px;
+    border: 1px solid rgb(253, 109, 109);
+}
+
+
+/* === Footer === */
+
+footer {
+    border: 1px solid rgba(128, 128, 128, 0.356);
+    margin-top: auto;
+    padding-bottom: 16px;
+}
+
+.redes img {
+    padding: 0px 8px;
+}
+
+
+/* funcionalidade recebidas com java */
+
+section.from {
+    transition: all 300ms;
+}
+
+section.from.hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -80px;
+}
