@@ -16,5 +16,3 @@ Server.
 In the future this APP will be connected to a SQL data base. 
 
 Version 2.0 will be updated soon.
-
-Translated with www.DeepL.com/Translator (free version)
